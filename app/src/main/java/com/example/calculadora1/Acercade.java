@@ -6,15 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class Acercade extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_acercade);
+
     }
-    public void acercade(View view) {
-        Intent i = new Intent(this, Acercade.class );
-        startActivity(i);
+    public void salir(View v) {
+        finish();
     }
 }
